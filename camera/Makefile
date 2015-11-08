@@ -3,7 +3,7 @@ CPP_FLAGS = -Wall -Wextra
 CXX = g++
 SOURCES := $(wildcard *.cpp)
 HEADERS := $(wildcard *.hpp)
-LIBRARIES := raspicam
+LIBRARIES := raspicam rf24-bcm python2.7
 LINKS := $(addprefix -l, $(LIBRARIES))
 
 .PHONY : clean all
